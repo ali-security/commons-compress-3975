@@ -59,7 +59,7 @@ jobs:
 
     # Upload jar only on ubuuntu java 8
     - name: "Upload jars"
-      if: ${{ matrix.os == 'ubuntu-22.04' && matrix.java == 8 }}
+      if: ${{ matrix.os == 'ubuntu-22.04' && matrix.java == 11 }}
       uses: actions/upload-artifact@v4
       with:
         name: "jars"
